@@ -4,6 +4,8 @@ using std::vector;
 
 class PrimeFactors {
  public:
-	 vector<int> of(int n) { return {};
+  vector<int> getPrimeFactors(int n) {
+    vector<int> result = {};
+    return result;
   }
 };

@@ -4,7 +4,7 @@
 TEST(PrimeFactors, Of1) {
   PrimeFactors prime;
   vector<int> expected{};
-  EXPECT_EQ(expected, prime.of(1));
+  EXPECT_EQ(expected, prime.getPrimeFactors(1));
 }
 
 int main() {
