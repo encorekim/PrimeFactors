@@ -9,6 +9,10 @@ class PrimeFactors {
     if (n == 2 || n == 3) {
       result.push_back(n);
     }
+    if (n == 4) {
+      result.push_back(2);
+      result.push_back(2);
+    }
     return result;
   }
 };
