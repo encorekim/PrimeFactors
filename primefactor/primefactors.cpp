@@ -6,12 +6,13 @@ class PrimeFactors {
  public:
   vector<int> getPrimeFactors(int n) {
     vector<int> result = {};
-    if (n == 2 || n == 3) {
-      result.push_back(n);
+    while ((n % 2) == 0) {
+      result.push_back(2);
+      n = n / 2;
     }
-    if (n == 4) {
-      result.push_back(2);
-      result.push_back(2);
+    while (n % 3 == 0) {
+      result.push_back(3);
+      n = n / 3;
     }
     return result;
   }
