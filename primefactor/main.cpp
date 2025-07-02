@@ -28,6 +28,11 @@ TEST_F(PrimeFactorsFixture, Of4) {
   EXPECT_EQ(expected, prime.getPrimeFactors(4));
 }
 
+TEST_F(PrimeFactorsFixture, Of6) {
+  vector<int> expected{2, 3};
+  EXPECT_EQ(expected, prime.getPrimeFactors(6));
+}
+
 int main() {
   ::testing::InitGoogleTest();
   return RUN_ALL_TESTS();
